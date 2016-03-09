@@ -56,6 +56,6 @@ In Example folder, you will find an already marked vba file, a template.doc, a l
 * .xls generation
 * .docx and .xlsx generation
 
-Fill free to contribute :-)
+Feel free to contribute :-)
 
 Pepitoh.
