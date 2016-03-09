@@ -22,8 +22,8 @@ VBad is a tool that allows you to obfuscate in many diffrent way pieces of VBA c
 * win32com
 
 #How to use 
-1. First of all, you need to markdown your orignal VBA to indicate the script what you want to obfuscate/randomize or not :
 
++ First of all, you need to markdown your orignal VBA to indicate the script what you want to obfuscate/randomize or not :
 * All VBA strings are encrypted by default. Moreover, you can exclude encryption of one string by adding an exclude mark ([!!]) at the end of the string. Example :
 ```vbs
 String_Encrypted = "This string will be encrypted"
@@ -38,12 +38,11 @@ Function [rdm::10]Test()  '=> Test() will become randomized with a 10 characters
 ```vbs
 Path_to_save_exe = [var::path] '=> string_to_hide("path") will be encrypted and put in the final VBA
 ``` 
-
-2. Git clone and customize config.py to fit your need, you have to indicate at least : 
++ Git clone and customize config.py to fit your need, you have to indicate at least : 
 ```python
-template_file = r"C:\tmp\Vbad\Example\Template\template.doc" # The path of the template Office document you want to use to generate your files
-filename_list = r"C:\tmp\Vbad\Example\Lists\filename_list.txt" #The path to the file that contain a list of different filename you want to use for your generated files
-path_gen_files = r"C:\tmp\Vbad\Example\Results" # Path where your generated Office document will be saved
+template_file = r"C:\tmp\Vbad\Example\Template\template.doc" # The path to the template Office document you want to use to generate your files
+filename_list = r"C:\tmp\Vbad\Example\Lists\filename_list.txt" #The path to the file that contains a list of different filenames you want to use for your generated files
+path_gen_files = r"C:\tmp\Vbad\Example\Results" # Path where your generated Office documents will be saved
 original_vba_file = r"C:\tmp\Vbad\Example\Orignal_VBA\original_vba.vbs" # The orignal VBA file you want to include, randomize and obfuscate in your malicious documents
 trigger_function_name =  "Test" # Function that you want to auto_trigger (in your original_vba_file)
 string_to_hide = {"domain_name":"http://www.test.com", "path_to_save":r"C:\tmp\toto"} #Strings that you want to add in your 
