@@ -1,5 +1,5 @@
 # VBad
-VBA Obuscation Tools combined with an MS office document generator.
+VBA Obuscation Tool combined with an MS office document generator.
 
 DISCLAIMER: This is only for testing purposes and can only be used where strict consent has been given. Do not use this for illegal purposes, period. 
 
@@ -8,12 +8,12 @@ Please read the LICENSE under readme/LICENSE for the licensing of VBad.
 ![alt tag](https://raw.githubusercontent.com/Pepitoh/VBad/master/Example/example_ok.PNG)
 
 # Features
-VBad is a tool that allows you to obfuscate in many diffrent way pieces of VBA code and integrated directly into MS Office document. You would be able to : 
-* Encrypt all String present in your VBA code;
-* Encrypt data from your python Script in VBA code (domain name or path for example);
-* Randomize each functions or variables' names that you want;
-* Chose Encryption method and how and where encryption keys are stored;
-* Generate as many unique MS Office u(with different randomize in the VBA) as you want using a filename list and a document Template;
+VBad is a tool that allows you to obfuscate (and encrypted) in many diffrent ways pieces of VBA code and integrated directly into a list of generated MS Office document. You would be able to : 
+* Encrypt all strings present in your VBA code;
+* Encrypt data from your python Script in VBA code (domain names or paths for example);
+* Randomize each functions' (or variables) names that you want;
+* Chose Encryption method, how and where encryption keys are stored;
+* Generate as many unique MS Office document (with different randomize in the VBA) as you want using a filename list and a document Template;
 * Enable autodestruction of encryption Keys feature once the VBA has been trigger once; 
 
 #prerequisites
