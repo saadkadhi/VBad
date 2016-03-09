@@ -16,6 +16,17 @@ VBad is a tool that allows you to obfuscate (and encrypted) in many diffrent way
 * Generate as many unique MS Office document (with different randomize in the VBA) as you want using a filename list and a document Template;
 * Enable autodestruction of encryption Keys feature once the VBA has been trigger once; 
 
+#How it works
+For the moment, only one type of encryption is supported. 
+
+All strings and indicated variables are encrypted (xored in fact) using a random key (different for each files). This key is stored into Document.Variables by the python program and then initialization (not the variable itself) is deleted from the VBA code. 
+
+It makes decryption of the document harder because analysts has to get back this Document.Variable key using another VBA. 
+
+Moreover, this keys are deleted once the macro is triggered one time (as long as the file is open from a writable place). 
+
+New storage methods and real encryption algorithms are to come. But, remember it's VBA, we do not have so many choices. :-).
+
 #prerequisites
 * Office (Excel/Word) for generated final doc (tested only on Office 2010)
 * Python 2.7 
@@ -47,6 +58,9 @@ original_vba_file = r"C:\tmp\Vbad\Example\Orignal_VBA\original_vba.vbs" # The or
 trigger_function_name =  "Test" # Function that you want to auto_trigger (in your original_vba_file)
 string_to_hide = {"domain_name":"http://www.test.com", "path_to_save":r"C:\tmp\toto"} #Strings that you want to add in your 
 ```
+
+
+
 
 #Example 
 In Example folder, you will find an already marked vba file, a template.doc, a list of 3 filename. You can use it and adapt it as you need.
