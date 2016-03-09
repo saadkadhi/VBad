@@ -5,6 +5,8 @@ DISCLAIMER: This is only for testing purposes and can only be used where strict 
 
 Please read the LICENSE under readme/LICENSE for the licensing of VBad.
 
+![alt tag](https://raw.githubusercontent.com/Pepitoh/VBad/master/Example/example_ok.PNG)
+
 # Features
 VBad is a tool that allows you to obfuscate in many diffrent way pieces of VBA code and integrated directly into MS Office document. You would be able to : 
 * Encrypt all String present in your VBA code;
