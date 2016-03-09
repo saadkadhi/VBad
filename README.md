@@ -1,5 +1,5 @@
 # VBad
-VBA Obuscation Tool combined with an MS office document generator.
+VBad is fully customizable VBA Obuscation Tool combined with an MS office document generator. It aims to help Red & Blue team for attack or defense.
 
 DISCLAIMER: This is only for testing purposes and can only be used where strict consent has been given. Do not use this for illegal purposes, period. 
 
