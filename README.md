@@ -23,7 +23,7 @@ VBad is a tool that allows you to obfuscate in many diffrent way pieces of VBA c
 
 #How to use 
 
-+ First of all, you need to markdown your orignal VBA to indicate the script what you want to obfuscate/randomize or not :
+First of all, you need to markdown your orignal VBA to indicate the script what you want to obfuscate/randomize or not :
 * All VBA strings are encrypted by default. Moreover, you can exclude encryption of one string by adding an exclude mark ([!!]) at the end of the string. Example :
 ```vbs
 String_Encrypted = "This string will be encrypted"
@@ -38,7 +38,7 @@ Function [rdm::10]Test()  '=> Test() will become randomized with a 10 characters
 ```vbs
 Path_to_save_exe = [var::path] '=> string_to_hide("path") will be encrypted and put in the final VBA
 ``` 
-+ Git clone and customize config.py to fit your need, you have to indicate at least : 
+Git clone and customize config.py to fit your need, you have to indicate at least : 
 ```python
 template_file = r"C:\tmp\Vbad\Example\Template\template.doc" # The path to the template Office document you want to use to generate your files
 filename_list = r"C:\tmp\Vbad\Example\Lists\filename_list.txt" #The path to the file that contains a list of different filenames you want to use for your generated files
