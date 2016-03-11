@@ -49,7 +49,7 @@ class WordObject:
             except:
                 self.Close()
                 self.Quit()
-                Info("Can't create vba module " +module_name+", check if your template file is not modifiy or if you module name is ok", 3)
+                Info("Can't create vba module " +module_name+", check if your template file is not modifiy or if you module name is ok, or if VBA Project object model is activated on macro options", 3)
         else:
             self.vba_active = self.doc.VBproject.VBComponents("ThisDocument").CodeModule
             self.vba_active.AddFromString(vba)
@@ -69,7 +69,7 @@ class WordObject:
         except:
             self.Close()
             self.Quit()
-            Info("Can't run macro " +macro_name+", check if the macro_name is ok and if the macro exists", 3)
+            Info("Can't run macro " +macro_name+", check if the macro_name is ok, if the macro exists or if macro are activated in Word/excel", 3)
 
     def Change_Macro_Settings(self):
         self.word.AutomationSecurity = 3
