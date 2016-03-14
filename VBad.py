@@ -107,6 +107,6 @@ def main():
         Info("File "+filename + file_type+" was created succesfuly",1,1)
 
     print "\n"
-    Info("Good, everything seems ok, "+str(file_len(filename_list)) +" "+file_type+" files were created in "+path_gen_files+" using "+encryption_type+" encyption with "+key_hiding_method+" hiding technic", 1,0)
+    Info("Good, everything seems ok, "+str(file_len(filename_list)) +" "+file_type+" files were created in "+path_gen_files+" using "+encryption_type+" encyption with "+key_hiding_method+" hiding technique", 1,0)
 
 if __name__ == "__main__": main()
